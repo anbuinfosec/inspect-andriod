@@ -28,11 +28,11 @@ javascript:(function() {
 
 ## Step Images
 
-| ![Image 1](https://raw.githubusercontent.com/anbuinfosec/inspect-andriod/refs/heads/main/images/image1.jpg) | ![Image 2](https://raw.githubusercontent.com/anbuinfosec/inspect-andriod/refs/heads/main/images/image2.jpg) |
+| ![Image 1](./images/image1.png) | ![Image 2](./images/image2.png) |
 |---------------------------------|---------------------------------|
-| ![Image 3](https://raw.githubusercontent.com/anbuinfosec/inspect-andriod/refs/heads/main/images/image3.jpg) | ![Image 4](https://raw.githubusercontent.com/anbuinfosec/inspect-andriod/refs/heads/main/images/image4.jpg) |
-| ![Image 5](https://raw.githubusercontent.com/anbuinfosec/inspect-andriod/refs/heads/main/images/image5.jpg) | ![Image 6](https://raw.githubusercontent.com/anbuinfosec/inspect-andriod/refs/heads/main/images/image6.jpg) |
-| ![Image 7](https://raw.githubusercontent.com/anbuinfosec/inspect-andriod/refs/heads/main/images/image7.jpg) | ![Image 8](https://raw.githubusercontent.com/anbuinfosec/inspect-andriod/refs/heads/main/images/image8.jpg) |
+| ![Image 3](./images/image3.png) | ![Image 4](./images/image4.png) |
+| ![Image 5](./images/image5.png) | ![Image 6](./images/image6.png) |
+| ![Image 7](./images/image7.png) | ![Image 8](./images/image8.png) |
 
 
 ## Tutorial
