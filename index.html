@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspect Android</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: #fff;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+        .code-block {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-left: 3px solid #ddd;
+            font-family: monospace;
+            color: #eee;
+            margin-top: 10px;
+            position: relative;
+            cursor: pointer;
+            overflow-wrap: break-word;
+        }
+        .copy-toast {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            z-index: 1000;
+            opacity: 0.9;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 2809px;
+            border-radius: 5px;
+        }
+        .tutorial {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .tutorial img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                margin: 10px;
+            }
+            h1, h2 {
+                font-size: 1.2em;
+                text-align: center;
+            }
+            td {
+                padding: 5px;
+            }
+            .code-block {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+            .tutorial img {
+                max-width: 90%;
+            }
+            .copy-toast {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                margin: 5px;
+            }
+            h1, h2 {
+                font-size: 1em;
+                text-align: center;
+            }
+            td, .code-block {
+                font-size: 0.8em;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inspect Elements on Mobile Phone Browsers</h1>
+    <h2>Step 1: Create a New Bookmark</h2>
+    <ol>
+        <li>Open your mobile browser (e.g., Chrome, Safari).</li>
+        <li>Create a new bookmark. You can do this by visiting any web page and adding it to your bookmarks.</li>
+    </ol>
+
+    <h2>Step 2: Edit the Bookmark’s URL</h2>
+    <ol>
+        <li>Open the bookmarks manager in your browser.</li>
+        <li>Find the newly created bookmark and edit it.</li>
+        <li>Replace the bookmark’s URL with the following JavaScript code.</li>
+        <li>Save the changes.</li>
+    </ol>
+
+    <div class="code-block" onclick="copyToClipboard()">
+        <code>
+            javascript:(function() { <br>
+            &nbsp;&nbsp;var script = document.createElement('script');<br>
+            &nbsp;&nbsp;script.src = 'https://cdnjs.cloudflare.com/ajax/libs/eruda/2.4.1/eruda.min.js';<br>
+            &nbsp;&nbsp;document.body.appendChild(script);<br>
+            &nbsp;&nbsp;script.onload = function () { eruda.init(); }<br>
+            })();
+        </code>
+    </div>
+
+    <div class="copy-toast" id="copyToast">Code copied to clipboard!</div>
+
+    <h2>Step 3: Use the Bookmarklet</h2>
+    <ol>
+        <li>Navigate to the web page you want to inspect.</li>
+        <li>Open your bookmarks and tap the “Inspect Element” bookmark.</li>
+        <li>The Eruda console will appear at the bottom of the screen, allowing you to inspect elements, view console logs, and more.</li>
+    </ol>
+
+    <h2>Step Images</h2>
+    <table>
+        <tr>
+            <td><img src="./images/image1.png" alt="Image 1"></td>
+            <td><img src="./images/image2.png" alt="Image 2"></td>
+        </tr>
+        <tr>
+            <td><img src="./images/image3.png" alt="Image 3"></td>
+            <td><img src="./images/image4.png" alt="Image 4"></td>
+        </tr>
+        <tr>
+            <td><img src="./images/image5.png" alt="Image 5"></td>
+            <td><img src="./images/image6.png" alt="Image 6"></td>
+        </tr>
+        <tr>
+            <td><img src="./images/image7.png" alt="Image 7"></td>
+            <td><img src="./images/image8.png" alt="Image 8"></td>
+        </tr>
+    </table>
+
+    <div class="tutorial">
+        <h2>Tutorial</h2>
+        <a href="https://youtu.be/O8oa3bwEF-o?si=kCD98KBpCcfCZxlJ" target="_blank">
+            <img src="https://img.youtube.com/vi/O8oa3bwEF-o/maxresdefault.jpg" alt="Watch the tutorial">
+        </a>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const code = `javascript:(function() {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/eruda/2.4.1/eruda.min.js';
+                document.body.appendChild(script);
+                script.onload = function () { eruda.init(); }
+            })();`;
+            
+            navigator.clipboard.writeText(code).then(() => {
+                const toast = document.getElementById("copyToast");
+                toast.style.display = "block";
+                setTimeout(() => {
+                    toast.style.display = "none";
+                }, 2000);
+            }).catch(() => {
+                alert("Failed to copy code. Please try again.");
+            });
+        }
+    </script>
+
+</body>
+</html>
