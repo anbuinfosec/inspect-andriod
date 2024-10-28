@@ -28,16 +28,16 @@ javascript:(function() {
 
 ## Step Images
 
-| ![Image 1](./images/image1.png) | ![Image 2](./images/image2.png) |
+| ![Image 1](./images/image1.jpg) | ![Image 2](./images/image2.jpg) |
 |---------------------------------|---------------------------------|
-| ![Image 3](./images/image3.png) | ![Image 4](./images/image4.png) |
-| ![Image 5](./images/image5.png) | ![Image 6](./images/image6.png) |
-| ![Image 7](./images/image7.png) | ![Image 8](./images/image8.png) |
+| ![Image 3](./images/image3.jpg) | ![Image 4](./images/image4.jpg) |
+| ![Image 5](./images/image5.jpg) | ![Image 6](./images/image6.jpg) |
+| ![Image 7](./images/image7.jpg) | ![Image 8](./images/image8.jpg) |
 
 
 ## Tutorial
 
-[![Watch the tutorial]()]()
+[![Watch the tutorial](https://i.ytimg.com/vi/rCGdIlSVJCA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHcBoACgA-KAgwIABABGGQgZChkMA8=&rs=AOn4CLBztGkyLxbyqIloiQ2JNX9KG1efrQ")](https://youtu.be/O8oa3bwEF-o?si=kCD98KBpCcfCZxlJ)
 
 ## 🌐 Socials:
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/anbuinfosec) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/anbuinfosec) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/anbuinfosec) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@anbuinfosec) [![Codepen](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/anbuinfosec) 

@@ -169,18 +169,13 @@
     <div class="tutorial">
         <h2>Tutorial</h2>
         <a href="https://youtu.be/O8oa3bwEF-o?si=kCD98KBpCcfCZxlJ" target="_blank">
-            <img src="https://img.youtube.com/vi/O8oa3bwEF-o/maxresdefault.jpg" alt="Watch the tutorial">
+            <img src="https://i.ytimg.com/vi/rCGdIlSVJCA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHcBoACgA-KAgwIABABGGQgZChkMA8=&rs=AOn4CLBztGkyLxbyqIloiQ2JNX9KG1efrQ" alt="Watch the tutorial">
         </a>
     </div>
 
     <script>
         function copyToClipboard() {
-            const code = `javascript:(function() {
-                var script = document.createElement('script');
-                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/eruda/2.4.1/eruda.min.js';
-                document.body.appendChild(script);
-                script.onload = function () { eruda.init(); }
-            })();`;
+            const code = `javascript:(function() {var script = document.createElement('script');script.src = 'https://cdnjs.cloudflare.com/ajax/libs/eruda/2.4.1/eruda.min.js';document.body.appendChild(script);script.onload = function () { eruda.init(); }})();`;
             
             navigator.clipboard.writeText(code).then(() => {
                 const toast = document.getElementById("copyToast");
